@@ -4,10 +4,182 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	text-transform: uppercase;
+	color: #fff;
 }
 
 body {
 	height: 100vh;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.scoreBox {
+	width: 700px;
+	border: 2px solid hsl(217, 16%, 45%);
+	border-radius: 10px;
+	height: 150px;
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.scoreDiv {
+	width: 150px;
+	height: 100px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.scoreTitle {
+	margin-top: 10px;
+	font-size: 22px;
+	color: hsl(229, 64%, 46%);
+}
+
+.score {
+	font-size: 45px;
+	color: hsl(229, 25%, 31%);
+}
+
+.choiceOfUser {
+	background: url('images/bg-triangle.svg') no-repeat center;
+	margin-top: 50px;
+	width: 475px;
+	height: 430px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.hand {
+	width: 160px;
+	height: 160px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.hand:hover {
+	background-color: rgb(212, 209, 209);
+}
+
+.hand-no {
+	cursor: inherit;
+}
+
+.hand-no:hover {
+	background-color: #fff;
+}
+
+.paper {
+	border: 15px solid #566ff7;
+}
+.scissors {
+	margin-left: 40px;
+	border: 15px solid #efa41f;
+}
+.rock {
+	border: 15px solid #da3b55;
+}
+
+.gameStart {
+	margin-top: 100px;
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+	display: none;
+}
+
+.user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.comp {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.winner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	color: hsl(231, 3%, 46%);
+	margin-top: 20px;
+	font-size: 18px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+}
+.btn:hover {
+	background-color: rgb(209, 209, 209);
+	color: #000;
+}
+
+.gameStart div p {
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+.gameStart div h2 {
+	font-size: 36px;
+}
+
+.btnRules {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+#btnRules {
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	font-weight: 600;
+	background-color: #182143;
+}
+
+#btnRules:hover {
+	background-color: rgb(209, 209, 209);
+	color: #000;
+	border: 1px solid #000;
+}
+
+.modal {
+	width: 400px;
+	height: 400px;
+	background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	top: 33%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }

@@ -8,6 +8,55 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<div class="wrapper">
+			<div class="scoreBox">
+				<div class="title">
+					<img src="/images/logo.svg" alt="" />
+				</div>
+				<div class="scoreDiv">
+					<p class="scoreTitle">score</p>
+					<h2 class="score">0</h2>
+				</div>
+			</div>
+			<div class="choiceOfUser">
+				<div class="hand paper" onclick="userChoice('paper')">
+					<img src="images/icon-paper.svg" alt="paper" />
+				</div>
+				<div class="hand scissors" onclick="userChoice('scissors')">
+					<img src="images/icon-scissors.svg" alt="scissors" />
+				</div>
+				<div class="hand rock" onclick="userChoice('rock')">
+					<img src="images/icon-rock.svg" alt="rock" />
+				</div>
+			</div>
+			<div class="gameStart">
+				<div class="user">
+					<p>you picked</p>
+					<div class="hand hand-no">
+						<img id="userChoiseImg" src="" alt="paper" />
+					</div>
+				</div>
+				<div class="winner">
+					<h2 id="whoIsWinner"></h2>
+					<button class="btn" onclick="restartGame()">play again</button>
+				</div>
+				<div class="comp">
+					<p>the house picked</p>
+					<div class="hand hand-no">
+						<img id="compChoiseImg" src="images/icon-paper.svg" alt="paper" />
+					</div>
+				</div>
+			</div>
+			<div class="btnRules">
+				<button id="btnRules" onclick="rules()">rules</button>
+			</div>
+
+			<div class="modal" onclick="modalOff()">
+				<div class="ruleImage">
+					<img src="./images/image-rules.svg" alt="" />
+				</div>
+			</div>
+		</div>
 		<script src="index.js"></script>
 	</body>
 </html>
